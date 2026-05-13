@@ -20,7 +20,6 @@
 
   .page-frame{max-width:1200px;margin:0 auto;background:#fff;box-shadow:0 0 24px rgba(0,0,0,.08)}
 
-  /* PRINT BAR */
   .print-bar{background:var(--navy);padding:10px 48px;display:flex;align-items:center;justify-content:space-between}
   .print-bar .back-link{color:var(--paleb);font-size:12px;text-decoration:none;font-weight:700;letter-spacing:.3px;display:inline-flex;align-items:center;gap:6px}
   .print-bar .back-link:hover{color:#fff}
@@ -28,14 +27,12 @@
   .print-btn{background:var(--sky);color:#fff;border:none;padding:8px 20px;border-radius:4px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;cursor:pointer;letter-spacing:.5px}
   .print-btn:hover{background:var(--blue)}
 
-  /* MASTHEAD */
   .mast{background:var(--navy);padding:18px 48px;display:flex;justify-content:space-between;align-items:center}
   .logo{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:#fff;white-space:nowrap;letter-spacing:-.5px}
   .logo span{color:var(--lb)}
   .mast-meta{color:var(--fg3);font-size:10px;text-transform:uppercase;letter-spacing:1.2px;text-align:right;line-height:1.7}
   .mast-meta strong{color:var(--lb);font-weight:600}
 
-  /* HERO */
   .hero{background:linear-gradient(135deg,var(--dark1),var(--navy));padding:48px 48px 40px;border-bottom:3px solid var(--sky)}
   .hero-inner{max-width:1200px;margin:0 auto}
   .badge{display:inline-block;background:var(--sky);color:#fff;font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:3px 10px;border-radius:2px;margin-bottom:10px}
@@ -45,7 +42,6 @@
 
   .container{max-width:1200px;margin:0 auto;padding:0 48px 48px}
 
-  /* PAGE BREAK BAR */
   .pb{background:var(--midb);color:#fff;padding:9px 48px;display:flex;align-items:center;gap:10px}
   .pbn{background:var(--sky);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;flex-shrink:0;color:#fff}
   .pbt{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;white-space:nowrap}
@@ -55,9 +51,7 @@
   h2{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.2}
   p{margin-bottom:10px;color:var(--dg);font-size:12.5px;line-height:1.55}
 
-  /* ── PAGE 1 ── */
-
-  /* HORIZONTAL RIDDLE STRIP */
+  /* RIDDLE STRIP */
   .riddle-strip{background:linear-gradient(135deg,var(--dark1),var(--navy));padding:20px 48px;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;border-bottom:2px solid rgba(86,160,211,.3)}
   .rs-label{display:flex;flex-direction:column;gap:4px;white-space:nowrap}
   .rs-label .slabel{color:var(--lb);margin-bottom:0}
@@ -67,7 +61,35 @@
   .riddle-inner strong{color:var(--lb)}
   .rs-hint{color:var(--fg3);font-size:10px;font-style:italic;white-space:nowrap;text-align:right}
 
-  /* HIGH FIVE — full width dark band with gradient continuing from hero */
+  /* MACRO SNAPSHOT STRIP — now comes first */
+  .macro-strip{background:var(--navy);border-top:3px solid var(--sky);padding:18px 48px 22px}
+  .macro-strip .snap-label{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--lb);margin-bottom:14px}
+  .macro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .snap-card{background:var(--midb);border-radius:5px;padding:13px 15px}
+  .snap-card .sc-title{font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--sky);margin-bottom:7px}
+  .snap-card .sc-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
+  .snap-card .sc-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:#fff;line-height:1}
+  .snap-card .sc-unit{font-size:10px;color:var(--paleb);margin-left:3px}
+  .snap-card .sc-delta{font-size:10px;font-weight:700}
+  .snap-card .sc-delta.up{color:#f87171}
+  .snap-card .sc-delta.down{color:#86efac}
+  .snap-card .sc-sub{font-size:10px;color:var(--fg3);line-height:1.4;margin-top:4px}
+  .snap-card .sc-compare{font-size:10px;color:var(--paleb);margin-top:4px;line-height:1.35}
+  .snap-card .sc-compare span{color:#fff;font-weight:600}
+
+  .mini-bar-row{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+  .mini-bar-lbl{font-size:9px;color:var(--paleb);width:68px;flex-shrink:0;line-height:1.3}
+  .mini-bar-bg{flex:1;background:rgba(255,255,255,.1);border-radius:2px;height:5px}
+  .mini-bar-fill{height:5px;border-radius:2px}
+  .mini-bar-val{font-size:9px;font-weight:700;color:#fff;width:30px;text-align:right;flex-shrink:0}
+
+  .rate-row{display:flex;align-items:flex-end;gap:3px;margin:5px 0 3px;height:24px}
+  .rate-bar{flex:1;border-radius:2px 2px 0 0;background:var(--sky);opacity:.7}
+  .rate-bar.current{opacity:1;background:var(--lb)}
+  .rate-months{display:flex;justify-content:space-between}
+  .rate-months span{font-size:7.5px;color:var(--fg3)}
+
+  /* HIGH FIVE — now comes second */
   .hf-band{background:linear-gradient(180deg,var(--navy) 0%,var(--dark1) 35%);padding:22px 48px 0}
   .hf-band .slabel{color:var(--sky)}
   .hf-band h2{color:#fff;font-size:16px;margin-bottom:4px}
@@ -84,44 +106,13 @@
   .hla{font-size:10.5px;color:#aab;line-height:1.4;margin-bottom:2px}
   .hlsw{font-size:10px;color:var(--sky);font-weight:600}
 
-  /* MACRO SNAPSHOT STRIP — 4 horizontal cards */
-  .macro-strip{background:var(--navy);border-top:3px solid var(--sky);padding:18px 48px 22px}
-  .macro-strip .snap-label{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--lb);margin-bottom:14px}
-  .macro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-  .snap-card{background:var(--midb);border-radius:5px;padding:13px 15px}
-  .snap-card .sc-title{font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--sky);margin-bottom:7px}
-  .snap-card .sc-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
-  .snap-card .sc-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:#fff;line-height:1}
-  .snap-card .sc-unit{font-size:10px;color:var(--paleb);margin-left:3px}
-  .snap-card .sc-delta{font-size:10px;font-weight:700}
-  .snap-card .sc-delta.up{color:#f87171}
-  .snap-card .sc-delta.down{color:#86efac}
-  .snap-card .sc-sub{font-size:10px;color:var(--fg3);line-height:1.4;margin-top:4px}
-  .snap-card .sc-compare{font-size:10px;color:var(--paleb);margin-top:4px;line-height:1.35}
-  .snap-card .sc-compare span{color:#fff;font-weight:600}
-
-  /* mini bar */
-  .mini-bar-row{display:flex;align-items:center;gap:6px;margin-bottom:4px}
-  .mini-bar-lbl{font-size:9px;color:var(--paleb);width:68px;flex-shrink:0;line-height:1.3}
-  .mini-bar-bg{flex:1;background:rgba(255,255,255,.1);border-radius:2px;height:5px}
-  .mini-bar-fill{height:5px;border-radius:2px}
-  .mini-bar-val{font-size:9px;font-weight:700;color:#fff;width:30px;text-align:right;flex-shrink:0}
-
-  /* sparkline */
-  .rate-row{display:flex;align-items:flex-end;gap:3px;margin:5px 0 3px;height:24px}
-  .rate-bar{flex:1;border-radius:2px 2px 0 0;background:var(--sky);opacity:.7}
-  .rate-bar.current{opacity:1;background:var(--lb)}
-  .rate-months{display:flex;justify-content:space-between}
-  .rate-months span{font-size:7.5px;color:var(--fg3)}
-
-  /* RETROSPECTIVE — light band below macro strip */
+  /* RETROSPECTIVE */
   .retro-band{background:var(--bgl);border-top:3px solid var(--sky);padding:18px 48px 22px}
   .retro-band .slabel{color:var(--blue)}
   .retro-band h2{color:var(--navy);font-size:16px;margin-bottom:4px}
   .retro-band .sub{color:var(--fg2);font-size:10px;margin-bottom:14px}
   .hist-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 
-  /* WHITE history cards — stretch to fill */
   .hcard{background:var(--bg);border-top:3px solid var(--blue);border-radius:0 0 4px 4px;padding:14px 16px;box-shadow:0 2px 6px rgba(0,0,0,.06)}
   .hcard.accent-top{border-top-color:var(--sky)}
   .hcard h4{font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3}
@@ -133,7 +124,6 @@
   /* PAGE 2 */
   .p2{padding:28px 0}
 
-  /* KEY METRIC */
   .metric-hero{background:linear-gradient(135deg,var(--navy),var(--midb));border-radius:8px;padding:22px 26px;margin:18px 0;display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:center}
   .m-unit{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--lb);margin-bottom:4px}
   .m-num{font-family:'Playfair Display',serif;font-size:58px;font-weight:900;color:var(--sky);line-height:1}
@@ -150,7 +140,6 @@
   .m-right p:last-child{margin-bottom:0}
   .m-right strong{color:#fff}
 
-  /* TECH SPOTLIGHT */
   .tech-layout{display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:start}
   .tech-body p{color:var(--ink);font-size:13px;line-height:1.6}
   .tech-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:18px}
@@ -162,7 +151,6 @@
   .pe-lens .lens-label{font-size:9px;font-weight:700;color:var(--blue);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
   .pe-lens p{font-size:11.5px;color:var(--dg);margin-bottom:0;line-height:1.5}
 
-  /* CALLOUT */
   .callout{background:var(--navy);border-radius:8px;padding:20px 24px;margin:18px 0}
   .callout h3{color:var(--sky);font-family:'Playfair Display',serif;font-size:16px;font-weight:700;margin-top:0;margin-bottom:8px}
   .callout p{color:var(--paleb);font-size:12px;margin-bottom:7px;line-height:1.6}
@@ -170,13 +158,11 @@
   .callout strong{color:#fff}
   .callout em{color:var(--lb)}
 
-  /* ANSWER */
   .answer{background:var(--bgl);border:2px dashed var(--blue);border-radius:6px;padding:16px 20px;margin:18px 0 0}
   .answer .alabel{color:var(--blue);font-size:8px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:6px}
   .answer p{font-size:12px;color:var(--dg);margin-bottom:0}
   .answer strong{color:var(--navy)}
 
-  /* FOOTER */
   .foot{background:var(--navy);padding:28px 48px;color:var(--paleb);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
   .ft-brand{font-family:'Playfair Display',serif;color:var(--lb);font-size:18px;font-weight:700}
   .ft-tag{font-size:10px;color:var(--paleb);margin-top:3px;letter-spacing:.5px}
@@ -195,9 +181,9 @@
     .container{padding:0 20px 32px}
     .riddle-strip{padding:18px 24px;grid-template-columns:1fr;gap:12px}
     .rs-hint{text-align:left}
-    .hf-band{padding:18px 24px 0}
     .macro-strip{padding:16px 24px 18px}
     .macro-grid{grid-template-columns:1fr 1fr}
+    .hf-band{padding:18px 24px 0}
     .retro-band{padding:16px 24px 18px}
     .hist-grid{grid-template-columns:1fr}
     .pb{padding-left:24px}
@@ -248,7 +234,86 @@
   <div class="rs-hint">↓ Answer revealed<br>at the end of<br>this issue.</div>
 </div>
 
-<!-- HIGH FIVE — full-width dark band -->
+<!-- MACRO SNAPSHOT STRIP — moved above High Five -->
+<div class="macro-strip">
+  <div class="snap-label">Macro Snapshots — April 2026</div>
+  <div class="macro-grid">
+
+    <div class="snap-card">
+      <div class="sc-title">Construction Unemployment</div>
+      <div class="sc-row">
+        <div><span class="sc-main">4.8</span><span class="sc-unit">%</span></div>
+        <div class="sc-delta up">▲ +0.3 vs. Mar</div>
+      </div>
+      <div class="sc-compare">National avg: <span>4.2%</span> &nbsp;|&nbsp; Prior yr: <span>4.5%</span></div>
+      <div class="sc-sub">Seasonal uptick; labor tightness persists in roofing trades despite softening construction starts.</div>
+    </div>
+
+    <div class="snap-card">
+      <div class="sc-title">Core Materials Price Index</div>
+      <div class="sc-sub" style="margin-bottom:6px">30-day movement vs. prior month</div>
+      <div class="mini-bar-row">
+        <div class="mini-bar-lbl">Asphalt shingle</div>
+        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:78%;background:#f87171"></div></div>
+        <div class="mini-bar-val">+6.4%</div>
+      </div>
+      <div class="mini-bar-row">
+        <div class="mini-bar-lbl">TPO / single-ply</div>
+        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:45%;background:#fbbf24"></div></div>
+        <div class="mini-bar-val">+3.1%</div>
+      </div>
+      <div class="mini-bar-row">
+        <div class="mini-bar-lbl">Metal roofing</div>
+        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:30%;background:#fbbf24"></div></div>
+        <div class="mini-bar-val">+2.2%</div>
+      </div>
+      <div class="mini-bar-row">
+        <div class="mini-bar-lbl">Fasteners</div>
+        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:18%;background:#86efac"></div></div>
+        <div class="mini-bar-val">+0.9%</div>
+      </div>
+      <div class="mini-bar-row" style="margin-bottom:0">
+        <div class="mini-bar-lbl">Insulation</div>
+        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:22%;background:#86efac"></div></div>
+        <div class="mini-bar-val">+1.4%</div>
+      </div>
+    </div>
+
+    <div class="snap-card">
+      <div class="sc-title">Interest Rate Trend — Fed Funds</div>
+      <div class="sc-row">
+        <div><span class="sc-main">5.25</span><span class="sc-unit">–5.50%</span></div>
+        <div class="sc-delta" style="color:var(--fg3)">— Held</div>
+      </div>
+      <div class="rate-row">
+        <div class="rate-bar" style="height:40%"></div>
+        <div class="rate-bar" style="height:55%"></div>
+        <div class="rate-bar" style="height:70%"></div>
+        <div class="rate-bar" style="height:82%"></div>
+        <div class="rate-bar" style="height:90%"></div>
+        <div class="rate-bar" style="height:100%"></div>
+        <div class="rate-bar current" style="height:100%"></div>
+      </div>
+      <div class="rate-months">
+        <span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
+      </div>
+      <div class="sc-sub" style="margin-top:5px">Rate held for 6th consecutive meeting. First cut now priced at Sept 2026 per CME FedWatch.</div>
+    </div>
+
+    <div class="snap-card">
+      <div class="sc-title">IEEPA Tariff Refunds</div>
+      <div class="sc-row">
+        <div><span class="sc-main">$165</span><span class="sc-unit">B est.</span></div>
+        <div class="sc-delta down" style="font-size:9.5px">Apr 20 launch</div>
+      </div>
+      <div class="sc-compare">Affected: <span>330,000+ importers</span> &nbsp;|&nbsp; Refund: <span>60–90 days</span></div>
+      <div class="sc-sub" style="margin-top:4px">SCOTUS struck IEEPA tariffs Feb 20; CBP's CAPE refund portal launched April 20. Section 232 (steel/aluminum) and Section 301 tariffs are <strong style="color:#fff">unaffected</strong> — material cost relief is partial, not wholesale.</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- HIGH FIVE — moved below Macro Snapshots -->
 <div class="hf-band">
   <div class="slabel">April 2026 Market Snapshot</div>
   <h2 style="color:#fff;font-size:16px;margin-bottom:4px">The Monthly High-Five</h2>
@@ -298,92 +363,9 @@
       <div class="hlsw">⚡ A quieter season cuts both ways: less storm-driven revenue spike, but more pressure on platforms whose underwriting baked in 2025-style activity. Diligence should normalize the trailing twelve below 2025 ACE, not at it.</div>
     </div>
   </div>
-</div><!-- end hf-band -->
+</div>
 
-<!-- MACRO SNAPSHOT STRIP — 4 horizontal cards -->
-<div class="macro-strip">
-  <div class="snap-label">Macro Snapshots — April 2026</div>
-  <div class="macro-grid">
-
-    <!-- 1. Construction Unemployment -->
-    <div class="snap-card">
-      <div class="sc-title">Construction Unemployment</div>
-      <div class="sc-row">
-        <div><span class="sc-main">4.8</span><span class="sc-unit">%</span></div>
-        <div class="sc-delta up">▲ +0.3 vs. Mar</div>
-      </div>
-      <div class="sc-compare">National avg: <span>4.2%</span> &nbsp;|&nbsp; Prior yr: <span>4.5%</span></div>
-      <div class="sc-sub">Seasonal uptick; labor tightness persists in roofing trades despite softening construction starts.</div>
-    </div>
-
-    <!-- 2. Materials Price Index -->
-    <div class="snap-card">
-      <div class="sc-title">Core Materials Price Index</div>
-      <div class="sc-sub" style="margin-bottom:6px">30-day movement vs. prior month</div>
-      <div class="mini-bar-row">
-        <div class="mini-bar-lbl">Asphalt shingle</div>
-        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:78%;background:#f87171"></div></div>
-        <div class="mini-bar-val">+6.4%</div>
-      </div>
-      <div class="mini-bar-row">
-        <div class="mini-bar-lbl">TPO / single-ply</div>
-        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:45%;background:#fbbf24"></div></div>
-        <div class="mini-bar-val">+3.1%</div>
-      </div>
-      <div class="mini-bar-row">
-        <div class="mini-bar-lbl">Metal roofing</div>
-        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:30%;background:#fbbf24"></div></div>
-        <div class="mini-bar-val">+2.2%</div>
-      </div>
-      <div class="mini-bar-row">
-        <div class="mini-bar-lbl">Fasteners</div>
-        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:18%;background:#86efac"></div></div>
-        <div class="mini-bar-val">+0.9%</div>
-      </div>
-      <div class="mini-bar-row" style="margin-bottom:0">
-        <div class="mini-bar-lbl">Insulation</div>
-        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:22%;background:#86efac"></div></div>
-        <div class="mini-bar-val">+1.4%</div>
-      </div>
-    </div>
-
-    <!-- 3. Interest Rate Trend -->
-    <div class="snap-card">
-      <div class="sc-title">Interest Rate Trend — Fed Funds</div>
-      <div class="sc-row">
-        <div><span class="sc-main">5.25</span><span class="sc-unit">–5.50%</span></div>
-        <div class="sc-delta" style="color:var(--fg3)">— Held</div>
-      </div>
-      <div class="rate-row">
-        <div class="rate-bar" style="height:40%"></div>
-        <div class="rate-bar" style="height:55%"></div>
-        <div class="rate-bar" style="height:70%"></div>
-        <div class="rate-bar" style="height:82%"></div>
-        <div class="rate-bar" style="height:90%"></div>
-        <div class="rate-bar" style="height:100%"></div>
-        <div class="rate-bar current" style="height:100%"></div>
-      </div>
-      <div class="rate-months">
-        <span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
-      </div>
-      <div class="sc-sub" style="margin-top:5px">Rate held for 6th consecutive meeting. First cut now priced at Sept 2026 per CME FedWatch.</div>
-    </div>
-
-    <!-- 4. IEEPA Tariff Refunds -->
-    <div class="snap-card">
-      <div class="sc-title">IEEPA Tariff Refunds</div>
-      <div class="sc-row">
-        <div><span class="sc-main">$165</span><span class="sc-unit">B est.</span></div>
-        <div class="sc-delta down" style="font-size:9.5px">Apr 20 launch</div>
-      </div>
-      <div class="sc-compare">Affected: <span>330,000+ importers</span> &nbsp;|&nbsp; Refund: <span>60–90 days</span></div>
-      <div class="sc-sub" style="margin-top:4px">SCOTUS struck IEEPA tariffs Feb 20; CBP's CAPE refund portal launched April 20. Section 232 (steel/aluminum) and Section 301 tariffs are <strong style="color:#fff">unaffected</strong> — material cost relief is partial, not wholesale.</div>
-    </div>
-
-  </div><!-- end macro-grid -->
-</div><!-- end macro-strip -->
-
-<!-- RETROSPECTIVE — full width light band -->
+<!-- RETROSPECTIVE -->
 <div class="retro-band">
   <div class="slabel">Retrospective</div>
   <h2 style="font-size:16px;margin-bottom:4px">Lessons from the Ladder</h2>
@@ -411,7 +393,6 @@
 <div class="container">
 <div class="p2">
 
-  <!-- KEY METRIC -->
   <div class="slabel">Key Metric</div>
   <h2>Gain / Fade Analysis</h2>
   <hr class="rule">
@@ -453,7 +434,6 @@
     </div>
   </div>
 
-  <!-- TECH SPOTLIGHT -->
   <div class="slabel" style="margin-top:20px">April Tech Spotlight</div>
   <h2>Things To Watch: Roofr</h2>
   <p style="font-size:12px;color:var(--mg);margin-bottom:4px">Each month we spotlight one tool, platform, or technology worth understanding — whether you're an operator, a PE investor evaluating platforms, or both.</p>
@@ -517,7 +497,6 @@
     </div>
   </div>
 
-  <!-- BOTTOM LINE -->
   <div class="callout" style="margin-top:24px">
     <h3>The Square Foot Bottom Line — April 2026</h3>
     <p>April delivered a highly acquisitive and cost heavy month to the roofing industry. <strong>QXO closed Kodiak on April 1 and announced TopBuild on April 19</strong> — $19B+ of capital deployed in three weeks. Brad Jacobs has now spent ~$30B over 11 months building toward a stated $50B revenue target, and BNP Paribas estimates roughly $6B remains in dry powder. The roofing distribution layer is no longer fragmenting; it is bifurcating between QXO, the Home Depot/SRS combination, and a long tail of regional independents and cooperatives (NEMEON, IDAC) defending against scale.</p>
@@ -541,6 +520,6 @@
   <div class="ft-disclaimer">For informational purposes only. Not investment advice. Data sourced from QXO investor releases (Apr 1, Apr 19), Roofing Contractor, Modern Distribution Management, Bloomberg, Capstone Partners, AXIA Advisors, Roadmap Advisors, Colorado State University Tropical Weather and Climate Research, U.S. Department of Labor, SBA Office of Advocacy, U.S. Supreme Court (<em>Learning Resources, Inc. v. Trump</em>, Feb 20, 2026), U.S. Customs and Border Protection, Penn Wharton Budget Model, KPMG Corporate Finance, IBISWorld, AGC, and BLS PPI. Past performance does not guarantee future results.</div>
 </div>
 
-</div><!-- end page-frame -->
+</div>
 </body>
 </html>
